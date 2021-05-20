@@ -1,0 +1,16 @@
+﻿@page "/"
+<img src="/images/logo_2.jpg" asp-append-version="true" width="500" />
+<div id="chartdiv"></div>
+
+<br />
+
+<div id="dateDiv">
+    <label for="datePickerStart">Choose starting date: </label>
+    <input type="date" id="datePickerStart" min="2019-11-17" max=@DateTime.UtcNow.ToString("yyyy-MM-dd")>
+    <label for="datePickerEnd">Choose ending date: </label>
+    <input type="date" id="datePickerEnd" min="2019-11-17" max=@DateTime.UtcNow.ToString("yyyy-MM-dd")>
+</div>
+
+<br />
+
+<div id="lineChartDiv"></div>
